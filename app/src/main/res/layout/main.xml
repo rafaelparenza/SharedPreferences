@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Usuário:"
+            android:typeface="monospace"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etUsuario"
+            android:text="  Senha:"
+            android:typeface="monospace"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etUsuario"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/etUsuario"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/chkSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etSenha"
+            android:text="Salvar preferência" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/chkSalvar"
+            android:onClick="btnFechar_Click"
+            android:text="Fechar programa" />
+
+    </RelativeLayout>
+
+</LinearLayout>
